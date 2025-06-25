@@ -107,7 +107,12 @@ export function CompanyBrandingClient({ initialData }: CompanyBrandingClientProp
                     <FormLabel>Primary Color</FormLabel>
                     <FormControl>
                       <div className="flex items-center gap-2">
-                        <Input type="color" className="w-12 h-10 p-1" {...field} />
+                        <Input
+                          type="color"
+                          className="w-12 h-10 p-1"
+                          value={field.value}
+                          onChange={(e) => field.onChange(e.target.value)}
+                        />
                         <Input placeholder="#0055A4" {...field} />
                       </div>
                     </FormControl>
@@ -123,7 +128,12 @@ export function CompanyBrandingClient({ initialData }: CompanyBrandingClientProp
                     <FormLabel>Secondary/Background Color</FormLabel>
                     <FormControl>
                       <div className="flex items-center gap-2">
-                        <Input type="color" className="w-12 h-10 p-1" {...field} />
+                        <Input
+                          type="color"
+                          className="w-12 h-10 p-1"
+                          value={field.value}
+                          onChange={(e) => field.onChange(e.target.value)}
+                        />
                         <Input placeholder="#F1F3F5" {...field} />
                       </div>
                     </FormControl>
