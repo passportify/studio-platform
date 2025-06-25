@@ -6,8 +6,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from 'next/link';
-import { Shield, Building2, Handshake, ClipboardCheck } from "lucide-react";
+import { Building2, Handshake, ClipboardCheck } from "lucide-react";
 import type { Metadata } from 'next';
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'Passportify - The All-in-One Platform for Digital Product Passports',
@@ -38,6 +39,13 @@ export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center min-h-svh bg-background p-8">
       <div className="text-center mb-12">
+        <Image 
+          src="/passportify-logo.png" 
+          alt="Passportify Logo" 
+          width={140} 
+          height={32} 
+          className="h-12 w-auto mb-8 mx-auto" 
+        />
         <h1 className="font-headline text-5xl font-bold tracking-tight">
           Welcome to Passportify
         </h1>
@@ -46,7 +54,7 @@ export default function HomePage() {
         </p>
       </div>
 
-       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl w-full">
+       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl w-full">
           {portals.map((portal) => (
             <Link key={portal.href} href={portal.href} passHref>
               <Card className="hover:border-primary/50 hover:shadow-xl transition-all duration-300 h-full flex flex-col group cursor-pointer">
