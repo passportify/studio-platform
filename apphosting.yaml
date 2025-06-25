@@ -1,0 +1,19 @@
+# Settings to manage and configure a Firebase App Hosting backend.
+# See https://firebase.google.com/docs/hosting/frameworks/nextjs
+# Required. The name of the backend. This must be the same as the backend's ID.
+backendId: passportify-lite
+# Required. The region to run the backend in.
+region: us-central1
+# Optional. The number of instances to run.
+# For more information, see https://firebase.google.com/docs/functions/autoscaling
+minInstances: 0
+maxInstances: 10
+# Optional. The amount of memory to allocate to the backend.
+# For more information, see https://firebase.google.com/docs/functions/manage-functions#memory
+memory: 256MiB
+# Optional. The CPU to allocate to the backend.
+# For more information, see https://firebase.google.com/docs/functions/manage-functions#cpu
+cpu: 0.5
+# Optional. The timeout for the backend.
+# For more information, see https://firebase.google.com/docs/functions/manage-functions#timeout
+timeoutSeconds: 60

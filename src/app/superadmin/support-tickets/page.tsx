@@ -1,0 +1,23 @@
+
+import { SupportTicketManagementClient } from '@/components/support-ticket-management-client';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Support Tickets',
+};
+
+export default function SupportTicketsPage() {
+  return (
+    <main className="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8">
+      <div className="flex items-center">
+        <h1 className="font-headline text-3xl font-bold tracking-tight">
+          Support Ticket Inbox
+        </h1>
+      </div>
+      <p className="text-muted-foreground max-w-4xl">
+        Manage all incoming support requests and bug reports from platform users.
+      </p>
+      <SupportTicketManagementClient />
+    </main>
+  );
+}

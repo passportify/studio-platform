@@ -1,0 +1,5 @@
+# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+#
+# All robots are welcome to crawl our site.
+User-agent: *
+Disallow:
