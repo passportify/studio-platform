@@ -16,12 +16,6 @@ export const metadata: Metadata = {
 export default function HomePage() {
   const portals = [
     {
-      href: "/superadmin",
-      icon: Shield,
-      title: "Super Admin Portal",
-      description: "Oversee the platform, manage entities, and configure system rules."
-    },
-    {
       href: "/company-portal",
       icon: Building2,
       title: "Company Portal",
